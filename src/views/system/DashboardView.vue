@@ -115,6 +115,9 @@ export default {
   <AppLayout :is-with-app-bar-nav-icon="true" @is-drawer-visible="isDrawerVisible = !isDrawerVisible">
     <template #content>
       <v-container class="dashboard">
+        <h3 class="gradient-text"></h3>
+
+
         <v-carousel cycle height="400" hide-arrows hide-delimiter-background :interval="2500">
           <v-carousel-item v-for="(slide, i) in slides" :key="i">
             <v-img :src="slide.image" height="100%">
@@ -144,6 +147,9 @@ export default {
         </v-row>
 
         <v-divider></v-divider>
+
+        <h3 class="gradient-text my-4 ">Search Results</h3>
+
 
         <v-row dense>
           <v-col v-if="loading" cols="12" class="text-center">

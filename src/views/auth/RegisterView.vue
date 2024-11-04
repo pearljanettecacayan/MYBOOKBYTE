@@ -99,7 +99,7 @@ const { smAndDown } = useDisplay();
 
 .content-wrapper {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .bookbyte {
@@ -171,6 +171,12 @@ const { smAndDown } = useDisplay();
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
+  background-color: transparent;
+}
+
+.full-height-container {
+  background: linear-gradient(135deg,
+      #000000, #56104e, #000000, #000000, #000000);
 }
 
 .social-login {
